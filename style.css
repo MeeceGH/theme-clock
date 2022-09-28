@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+:root {
+    --red-hand-color: #f04a4a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #f6f7fb;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 150px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    width: 100px;
+}
+
+#clock-container {
+    margin-top: 75px;
+    width: 100%;
+}
+
+#clock {
+    height: 150px;
+    position: relative;
+}
+
+.center-point {
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--red-hand-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+.hand.second {
+    background-color: var(--red-hand-color);
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.hand.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.hand.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 40px;
+}
+
+.time {
+    font-size: 2.1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.date {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    color: #888;
+}
+
+.circle {
+    background-color: black;
+    border-radius: 50%;
+    padding: 0 0.4rem;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+.dark-mode-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.dark-mode-body {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode-hand {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
